@@ -24,7 +24,7 @@ export function Navigation() {
             <img 
               src={logo} 
               alt="Adam James" 
-              className="h-12 w-auto opacity-90 hover:opacity-100 transition-opacity"
+              className="h-[120px] w-auto opacity-90 hover:opacity-100 transition-opacity"
             />
           </a>
 
