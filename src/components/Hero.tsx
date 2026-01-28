@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-
-const heroImage = "https://img1.wsimg.com/isteam/ip/a8f5f6b2-baab-4db2-8e7f-fe52d95d09a5/IMG_6018-0002.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1280,h:853";
+import heroImage from "@/assets/hero-bg.jpg";
 
 const testimonials = [
   {
