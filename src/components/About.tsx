@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { Music, PenTool, Disc3 } from "lucide-react";
+import singerImage from "@/assets/singer.jpg";
+import songwriterImage from "@/assets/songwriter.jpg";
+import producerImage from "@/assets/producer.jpg";
 
 const roles = [
   {
@@ -7,21 +10,21 @@ const roles = [
     icon: Music,
     description:
       "A popular recording artist endorsed by Frank Sinatra's Family. Adam played the role of Frank Sinatra in the first musical ever produced by the family and has shared stages with Ray Charles, Tony Bennett, Liza Minnelli, and Jann Arden.",
-    image: "https://img1.wsimg.com/isteam/ip/a8f5f6b2-baab-4db2-8e7f-fe52d95d09a5/FullSizeRender.jpeg/:/cr=t:12.27%25,l:0%25,w:100%25,h:75.46%25/rs=w:600,h:450,cg:true",
+    image: singerImage,
   },
   {
     title: "Songwriter",
     icon: PenTool,
     description:
       "Adam's original songs are featured on Spotify and Apple Music, in movies, TV & The Olympics. As the founder of Singstagram, he writes, records and delivers personalized theme songs as music videos.",
-    image: "https://img1.wsimg.com/isteam/ip/a8f5f6b2-baab-4db2-8e7f-fe52d95d09a5/IMG_5656.JPG/:/cr=t:0%25,l:12.5%25,w:75%25,h:100%25/rs=w:600,h:800,cg:true",
+    image: songwriterImage,
   },
   {
     title: "Producer",
     icon: Disc3,
     description:
       "Music producer of The Vancouver Olympics, The Arab Games, The Calgary Stampede Grandstand Show, and collaborator on the Circle of Doors Tarot interactive art installation commissioned by Burning Man.",
-    image: "https://img1.wsimg.com/isteam/ip/a8f5f6b2-baab-4db2-8e7f-fe52d95d09a5/IMG_9316%20copy.png/:/cr=t:0%25,l:12.41%25,w:75.19%25,h:100%25/rs=w:600,h:800,cg:true",
+    image: producerImage,
   },
 ];
 
