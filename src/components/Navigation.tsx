@@ -20,7 +20,7 @@ export function Navigation() {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="relative z-10">
+          <a href="#" className="relative z-10 self-center mt-6">
             <img 
               src={logo} 
               alt="Adam James" 
