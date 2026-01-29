@@ -31,30 +31,35 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-background/40 to-transparent" />
       </div>
 
-      {/* Name and Quote at Top */}
-      <div className="absolute top-24 left-0 right-0 z-10">
+      {/* Name at Top */}
+      <div className="absolute top-16 md:top-24 left-0 right-0 z-10">
         <div className="container mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            <h1 className="font-display text-6xl md:text-8xl lg:text-9xl tracking-[0.1em] text-cream/20">
+            <h1 className="font-display text-4xl md:text-8xl lg:text-9xl tracking-[0.1em] text-cream/20 text-center md:text-left">
               ADAM JAMES
             </h1>
           </motion.div>
-          
-          {/* Quote below name */}
+        </div>
+      </div>
+      
+      {/* Quote - positioned lower on mobile */}
+      <div className="absolute top-[55%] md:top-40 left-0 right-0 z-10">
+        <div className="container mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="mt-16"
           >
-            <blockquote className="font-display text-lg md:text-xl lg:text-2xl text-cream/90 italic whitespace-nowrap">
-              "{testimonials[0].quote}"
+            <blockquote className="font-display text-lg md:text-xl lg:text-2xl text-cream/90 italic text-center md:text-left">
+              <span className="md:whitespace-nowrap">"I've seen many play Sinatra onstage,</span>
+              <br className="md:hidden" />
+              <span className="md:whitespace-nowrap"> Adam's the best"</span>
             </blockquote>
-            <p className="font-sans text-xs tracking-[0.3em] uppercase text-gold mt-3">
+            <p className="font-sans text-xs tracking-[0.3em] uppercase text-gold mt-3 text-center md:text-left">
               — {testimonials[0].author}
             </p>
           </motion.div>
