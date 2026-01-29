@@ -31,8 +31,8 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-background/40 to-transparent" />
       </div>
 
-      {/* Name at Top */}
-      <div className="absolute top-28 left-0 right-0 z-10">
+      {/* Name and Quote at Top */}
+      <div className="absolute top-24 left-0 right-0 z-10">
         <div className="container mx-auto px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0 }}
@@ -43,36 +43,26 @@ export function Hero() {
               ADAM JAMES
             </h1>
           </motion.div>
-        </div>
-      </div>
-
-      {/* Quote at Bottom */}
-      <div className="relative z-10 container mx-auto px-6 lg:px-12 pb-20 lg:pb-32">
-        <div className="max-w-4xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="mb-8"
-          >
-            <blockquote className="font-display text-2xl md:text-4xl lg:text-5xl text-cream leading-relaxed italic">
-              "{testimonials[0].quote}"
-            </blockquote>
-          </motion.div>
-
-          {/* Author */}
+          
+          {/* Quote below name */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
-            className="flex items-center gap-4"
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="mt-6"
           >
-            <div className="w-16 h-px bg-gold" />
-            <p className="font-sans text-sm tracking-[0.3em] uppercase text-gold">
-              {testimonials[0].author}
+            <blockquote className="font-display text-lg md:text-xl lg:text-2xl text-cream/90 italic whitespace-nowrap">
+              "{testimonials[0].quote}"
+            </blockquote>
+            <p className="font-sans text-xs tracking-[0.3em] uppercase text-gold mt-3">
+              — {testimonials[0].author}
             </p>
           </motion.div>
         </div>
+      </div>
+
+      {/* Spacer for bottom content area */}
+      <div className="relative z-10 container mx-auto px-6 lg:px-12 pb-20 lg:pb-32">
       </div>
 
       {/* Scroll Indicator */}
