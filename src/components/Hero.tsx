@@ -31,19 +31,32 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-background/40 to-transparent" />
       </div>
 
-      {/* Content */}
+      {/* Name at Top */}
+      <div className="absolute top-28 left-0 right-0 z-10">
+        <div className="container mx-auto px-6 lg:px-12">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+          >
+            <h1 className="font-display text-6xl md:text-8xl lg:text-9xl tracking-[0.1em] text-cream/20">
+              ADAM JAMES
+            </h1>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Quote at Bottom */}
       <div className="relative z-10 container mx-auto px-6 lg:px-12 pb-20 lg:pb-32">
         <div className="max-w-4xl">
-          {/* Quote */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
             className="mb-8"
           >
-            <span className="quote-mark absolute -top-8 -left-4 select-none">"</span>
             <blockquote className="font-display text-2xl md:text-4xl lg:text-5xl text-cream leading-relaxed italic">
-              {testimonials[0].quote}
+              "{testimonials[0].quote}"
             </blockquote>
           </motion.div>
 
@@ -51,25 +64,13 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
             className="flex items-center gap-4"
           >
             <div className="w-16 h-px bg-gold" />
             <p className="font-sans text-sm tracking-[0.3em] uppercase text-gold">
               {testimonials[0].author}
             </p>
-          </motion.div>
-
-          {/* Subtle name reveal */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.8 }}
-            className="mt-16"
-          >
-            <h1 className="font-display text-6xl md:text-8xl lg:text-9xl tracking-[0.1em] text-cream/10">
-              ADAM JAMES
-            </h1>
           </motion.div>
         </div>
       </div>
