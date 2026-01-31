@@ -24,7 +24,7 @@ export function Hero() {
         <img
           src={heroImage}
           alt="Adam James performing"
-          className="w-full h-full object-cover object-top lg:[object-position:center_-25%]"
+          className="w-full h-full object-cover object-top lg:object-[center_top] lg:-translate-y-[25%]"
         />
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
