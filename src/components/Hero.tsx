@@ -39,7 +39,7 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            <h1 className="font-display text-[2.5rem] md:text-[8rem] lg:text-[10.5rem] tracking-[0.2em] text-cream/20 text-center md:text-left whitespace-nowrap">
+            <h1 className="font-display text-[2.5rem] tracking-[0.2em] text-cream/20 text-center whitespace-nowrap md:hidden">
               ADAM JAMES
             </h1>
           </motion.div>
