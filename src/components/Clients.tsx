@@ -1,16 +1,23 @@
 import { motion } from "framer-motion";
 import googleLogo from "@/assets/clients/google.png";
+import baxterLogo from "@/assets/clients/baxter.svg";
+import esteeLauderLogo from "@/assets/clients/estee-lauder.svg";
+import princetonLogo from "@/assets/clients/princeton.png";
+import mcgillLogo from "@/assets/clients/mcgill.svg";
+import procterGambleLogo from "@/assets/clients/procter-gamble.png";
+import vancouverOlympicsLogo from "@/assets/clients/vancouver-olympics.svg";
+import montrealJazzLogo from "@/assets/clients/montreal-jazz.svg";
 
 const clients = [
   { name: "Google", logo: googleLogo },
-  { name: "Baxter", logo: null },
-  { name: "Estée Lauder", logo: null },
-  { name: "Princeton University", logo: null },
-  { name: "McGill University", logo: null },
-  { name: "Procter & Gamble", logo: null },
-  { name: "Vancouver Olympics", logo: null },
+  { name: "Baxter", logo: baxterLogo },
+  { name: "Estée Lauder", logo: esteeLauderLogo },
+  { name: "Princeton University", logo: princetonLogo },
+  { name: "McGill University", logo: mcgillLogo },
+  { name: "Procter & Gamble", logo: procterGambleLogo },
+  { name: "Vancouver Olympics", logo: vancouverOlympicsLogo },
   { name: "Calgary Stampede", logo: null },
-  { name: "Montreal Jazz Festival", logo: null },
+  { name: "Montreal Jazz Festival", logo: montrealJazzLogo },
   { name: "Detroit Symphony", logo: null },
 ];
 
