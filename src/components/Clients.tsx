@@ -22,7 +22,7 @@ export function Clients() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="section-title text-cream mb-4">Clients</h2>
+          <h2 className="section-title text-cream mb-4">Select Clients</h2>
           <div className="w-24 h-px mx-auto bg-gradient-to-r from-transparent via-gold to-transparent" />
         </motion.div>
 
