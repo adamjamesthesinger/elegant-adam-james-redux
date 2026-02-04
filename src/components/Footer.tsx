@@ -29,7 +29,7 @@ export function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <img src={logo} alt="Adam James" className="h-12 w-auto mb-6 opacity-80" />
+            <img src={logo} alt="Adam James" className="h-[240px] w-auto mb-6 opacity-80" />
             <p className="font-body text-lg text-muted-foreground">
               Singer • Songwriter • Producer
             </p>
