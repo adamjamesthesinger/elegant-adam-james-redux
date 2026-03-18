@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { Play } from "lucide-react";
+import { Play, ExternalLink } from "lucide-react";
+
+const SPOTIFY_URL = "https://open.spotify.com/track/3JW39MNN7ey81XyXWzWhc9?si=46962b4ffda34690";
 
 const videos = [
   {
@@ -31,6 +33,38 @@ export function Videos() {
           <div className="w-24 h-px mx-auto bg-gradient-to-r from-transparent via-gold to-transparent" />
         </motion.div>
 
+        {/* Spotify Embed - First Item */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6 }}
+          className="mb-12 lg:mb-16 max-w-md mx-auto md:mx-0"
+        >
+          <h3 className="font-display text-xl lg:text-2xl text-cream mb-2">New Release</h3>
+          <p className="text-muted-foreground text-sm mb-4">Listen to my latest song on Spotify</p>
+          <a
+            href={SPOTIFY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-xl overflow-hidden border border-border hover:border-gold transition-colors duration-300 group"
+          >
+            <iframe
+              src="https://open.spotify.com/embed/track/3JW39MNN7ey81XyXWzWhc9?utm_source=generator&theme=0"
+              width="100%"
+              height="352"
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              title="Spotify player"
+            />
+            <div className="flex items-center gap-2 px-4 py-3 bg-card text-muted-foreground text-sm group-hover:text-gold transition-colors duration-300">
+              <ExternalLink size={14} />
+              <span>Open in Spotify</span>
+            </div>
+          </a>
+        </motion.div>
+
         {/* Videos Grid */}
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           {videos.map((video, index) => (
@@ -42,7 +76,6 @@ export function Videos() {
               transition={{ duration: 0.6, delay: index * 0.15 }}
               className="group"
             >
-              {/* Video Thumbnail */}
               <a
                 href={`https://www.youtube.com/watch?v=${video.videoId}`}
                 target="_blank"
@@ -54,19 +87,13 @@ export function Videos() {
                   alt={video.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                
-                {/* Overlay */}
                 <div className="absolute inset-0 bg-background/40 transition-opacity duration-300 group-hover:bg-background/20" />
-                
-                {/* Play Button */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-20 h-20 rounded-full border-2 border-gold bg-background/50 backdrop-blur-sm flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-gold">
                     <Play size={28} className="text-gold group-hover:text-background ml-1" fill="currentColor" />
                   </div>
                 </div>
               </a>
-
-              {/* Content */}
               <h3 className="font-display text-xl lg:text-2xl text-cream mb-2 group-hover:text-gold transition-colors">
                 {video.title}
               </h3>

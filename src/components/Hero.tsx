@@ -66,6 +66,32 @@ export function Hero() {
         </div>
       </div>
 
+      {/* Spotify Mini Overlay - bottom right */}
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 1 }}
+        className="absolute bottom-20 right-4 md:right-8 lg:right-12 z-10 hidden md:block"
+      >
+        <a
+          href="https://open.spotify.com/track/3JW39MNN7ey81XyXWzWhc9?si=46962b4ffda34690"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block w-[200px] lg:w-[240px] rounded-lg overflow-hidden border border-gold/30 hover:border-gold shadow-2xl transition-all duration-300 hover:scale-105"
+        >
+          <iframe
+            src="https://open.spotify.com/embed/track/3JW39MNN7ey81XyXWzWhc9?utm_source=generator&theme=0"
+            width="100%"
+            height="152"
+            frameBorder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            title="New release on Spotify"
+            className="pointer-events-none"
+          />
+        </a>
+      </motion.div>
+
       {/* Spacer for bottom content area */}
       <div className="relative z-10 container mx-auto px-6 lg:px-12 pb-20 lg:pb-32">
       </div>
