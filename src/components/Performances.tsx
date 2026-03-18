@@ -3,12 +3,44 @@ import { Calendar, MapPin, Clock } from "lucide-react";
 
 const performances = [
   {
+    date: "APR 3, 2026",
+    venue: "KW Jazzroom",
+    location: "Waterloo, ON",
+    time: "TBA",
+    description: "",
+    featured: true,
+  },
+  {
+    date: "APR 4, 2026",
+    venue: "Hugh's Room",
+    location: "Toronto, ON",
+    time: "TBA",
+    description: "Featuring Juno Award Winning Pianist Robi Botos",
+    featured: true,
+  },
+  {
+    date: "APR 11, 2026",
+    venue: "The Sanctuary Concert Hall",
+    location: "Georgetown, ON",
+    time: "TBA",
+    description: "Featuring Juno Award Winning Pianist Robi Botos",
+    featured: true,
+  },
+  {
+    date: "APR 13, 2026",
+    venue: "The Old Mill",
+    location: "Toronto, ON",
+    time: "TBA",
+    description: "",
+    featured: true,
+  },
+  {
     date: "DEC 31, 2025",
     venue: "Massey Hall",
     location: "Toronto, ON",
     time: "7:30 PM",
     description: "New Year's Eve Comedy Extravaganza with Jaymz Bee & Band, hosted by Colin Mochrie",
-    featured: true,
+    featured: false,
   },
   {
     date: "MAY 24, 2025",
@@ -35,7 +67,6 @@ const performances = [
     featured: false,
   },
 ];
-
 export function Performances() {
   return (
     <section id="performances" className="py-24 lg:py-32 bg-background">
