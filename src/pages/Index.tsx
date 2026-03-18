@@ -23,6 +23,7 @@ const Index = () => {
       <Biography />
       <Clients />
       <Videos />
+      <SpotifyRelease />
       <Connect />
       <Footer />
     </div>
