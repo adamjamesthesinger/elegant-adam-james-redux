@@ -21,7 +21,7 @@ export function Biography() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="font-body text-lg lg:text-xl text-muted-foreground leading-relaxed space-y-8"
+          className="font-body text-lg lg:text-xl text-secondary leading-relaxed space-y-8"
         >
           <p>
             <strong className="text-cream">Adam James doesn't just sing jazz—he creates moments that linger long after the last note fades.</strong>
