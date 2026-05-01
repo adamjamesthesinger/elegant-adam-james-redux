@@ -3,7 +3,7 @@ import { Play } from "lucide-react";
 import { useState } from "react";
 
 export function FeaturedVideo() {
-  const videoId = "2mk6w0Y8NKg";
+  const videoId = "IOlxMAahDvo";
   const [playing, setPlaying] = useState(false);
   
   return (
